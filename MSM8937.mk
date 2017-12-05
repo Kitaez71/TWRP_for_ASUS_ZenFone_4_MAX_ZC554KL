@@ -11,5 +11,15 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/recovery.fstab:root/recovery.fstab
 
 $(call inherit-product, build/target/product/full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Charger
+PRODUCT_PACKAGES += \
+	charger_res_images
+
+# Encryption
+PRODUCT_PACKAGES += \
+	libcryptfs_hw
 
 PRODUCT_NAME := MSM8937

@@ -74,7 +74,7 @@ HAVE_SELINUX := true
 TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_EXTRA_LANGUAGES := true
-TW_INCLUDE_CRYPTO := true
+#TW_INCLUDE_CRYPTO := true
 BOARD_RECOVERY_SWIPE := true
 TARGET_RECOVERY_FSTAB := device/Asus_X00ID/MSM8937/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
@@ -93,7 +93,7 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := external_sd
 TW_BRIGHTNESS_PATH := /sys/class/leds/lsd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 BOARD_HAS_FLIPPED_SCREEN := true
-TW_DEVICE_VERSION := 1
+TW_DEVICE_VERSION := 2
 
 # USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/soc/78db000.usb/msm_hsusb/gadget/lun0/file
